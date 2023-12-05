@@ -27,8 +27,6 @@ namespace XLua.CSObjectWrap
         {
             
             
-            translator.AddInterfaceBridgeCreator(typeof(Tutorial.CSCallLua.ItfD), TutorialCSCallLuaItfDBridge.__Create);
-            
         }
         
 	    static XLua_Gen_Initer_Register__()

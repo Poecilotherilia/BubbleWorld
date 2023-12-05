@@ -1,0 +1,44 @@
+---
+--- Created by BoA.
+--- DateTime: 2023/11/30 20:29
+--- Description: 启动脚本
+---
+require 'framework/log/log'
+local log = log
+local boot = { cname = 'boot' }
+
+---初始化游戏框架
+function boot.init_framework_sync()
+
+end
+
+---启动游戏
+function boot.boot_sync()
+
+end
+
+---on_start
+---@public
+function boot.on_start()
+    boot.init_framework_sync()
+    print('aaa')
+    CS.UnityEngine.Debug.LogError("aaa")
+    CS.UnityEngine.Debug.LogError(log)
+    log.error("ttt")
+    log.warning('wwew')
+    log.info('wewqqa')
+end
+
+---on_update
+---@public
+function boot.on_update()
+
+end
+
+---on_application_quit
+---@public
+function boot.on_application_quit()
+
+end
+
+return boot
